@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="CV/css/base1.css">
 	<link rel="stylesheet" href="CV/css/layout1.css">
 	<link rel="stylesheet" href="CV/css/animate.css">
+	<link rel="stylesheet" href="CV/css/jquery.fancybox.css">
 	<link rel="stylesheet" href="CV/css/component.css">
 
 </head>
@@ -66,7 +67,7 @@
 			<div class="hero">
 				<div class="hero__bg"></div>
 				<div class="container">
-					<div class="hero__content wow bounceInleft">
+					<div class="hero__content wow bounceInLeft">
 						<h5 class="hero__heading">HELLO<br>I'M<br>JASON YANG</h5>
 						<a href="https://www.linkedin.com/in/jasonyang21656/" class="btn btn--primary btn--md">Linkedin</a>
 					</div>
@@ -97,11 +98,11 @@
 			<!-- Start skill -->
 			<div class="skill bg-color-white lean-bg--bottom ">
 				<div class="container">
-					<h2 class="subtitle u-text-center">SKILL</h2>
+					<h2 class="subtitle u-text-center wow bounceInUp">SKILL</h2>
 					<div class="skill-group">
 						<div class="row">
 							<div class="col-sm-6">
-								<div class="skill-card">
+								<div class="skill-card wow bounceInUp">
 									<div class="skill-card__inner">
 										<h4 class="skill-card__title">Adobe XD</h4>
 										<h5 class="skill-card__text">Proficient with Adobe XD to create prototypes</h5>
@@ -112,7 +113,7 @@
 								</div>
 							</div>
 							<div class="col-sm-6">
-								<div class="skill-card">
+								<div class="skill-card wow bounceInUp" data-wow-delay="0.5s">
 									<div class="skill-card__inner">
 										<h4 class="skill-card__title">Adobe Photoshop </h4>
 										<h5 class="skill-card__text">Ability to create 2D graphical content with Adobe Photoshop</h5>
@@ -125,7 +126,7 @@
 						</div>	
 						<div class="row">
 							<div class="col-sm-6">
-								<div class="skill-card">
+								<div class="skill-card wow bounceInUp" data-wow-delay="1s">
 									<div class="skill-card__inner">
 										<h4 class="skill-card__title">3D Max</h4>
 										<h5 class="skill-card__text">Ability to create 3D graphical content with 3D Max</h5>
@@ -136,7 +137,7 @@
 								</div>
 							</div>
 							<div class="col-sm-6">
-								<div class="skill-card">
+								<div class="skill-card wow bounceInUp" data-wow-delay="1.5s">
 									<div class="skill-card__inner">
 										<h4 class="skill-card__title">Auto Cad</h4>
 										<h5 class="skill-card__text">Proficient with Auto Cad to designed 2D drawing</h5>
@@ -155,37 +156,37 @@
 		    <!-- Start Experience -->
 		    <div class="experience">
 		    	<div class="container">
-		    		<h2 class="subtitle u-text-center color-white">EXPERIENCE</h2>
+		    		<h2 class="subtitle u-text-center color-white wow bounceInUp">EXPERIENCE</h2>
 		    		<div class="timeline-group">
 		    			<div class="timeline"></div>
 		    			<div class="timeline-cards">
 		    				<div class="timeline-cards__row">
-		    					<div class="timeline-card">
+		    					<div class="timeline-card wow bounceInUp">
 		    						<h4 class="timeline-card__text">
 		    							3 Years experienced Kitchen Designer
 		    						     </h4>
 		    					</div>
 		    				</div>
 		    				<div class="timeline-cards__row">
-		    					<div class="timeline-card">
+		    					<div class="timeline-card wow bounceInUp">
 		    						<h4 class="timeline-card__text">
 		    							The leisure - Waterfall Project</h4>
 		    					</div>
 		    				</div>
 		    				<div class="timeline-cards__row">
-		    					<div class="timeline-card">
+		    					<div class="timeline-card wow bounceInUp">
 		    						<h4 class="timeline-card__text">
 		    							Uprise - Agile Project</h4>
 		    					</div>
 		    				</div>
 		    				<div class="timeline-cards__row">
-		    					<div class="timeline-card">
+		    					<div class="timeline-card wow bounceInUp">
 		    						<h4 class="timeline-card__text">
 		    							Upgear - Lean Project</h4>
 		    					</div>
 		    				</div>
 		    				<div class="timeline-cards__row">
-		    					<div class="timeline-card">
+		    					<div class="timeline-card wow bounceInUp">
 		    						<h4 class="timeline-card__text">
 		    							Five Elements Hostel - Personal Project</h4>
 		    					</div>
@@ -199,15 +200,18 @@
 		    <!-- Start work -->
 		    <div class="work bg-color-white lean-bg--top lean-bg--bottom">
 		    	<div class="container">
-		    		<h2 class="subtitle u-text-center">UX PROJECT</h2>
+		    		<h2 class="subtitle u-text-center wow bounceInUp">UX PROJECT</h2>
 		    		<div class="work-list">
-		    			<div class="work-item">
+		    			<div class="work-item wow fadeInUp">
 		    				<div class="row">
 		    					<div class="col-sm-6 col-sm-push-6">
 		    						<div class="imgbox">
-		    							<div class="imgbox__inner imgbox__inner--4-3">
-		    								<div class="image" style="background-image:url('CV/image//work/5 elements.png'); "></div>
-		    							</div>
+		    							<a href="CV/image/work/5 elements.png" data-fancybox="group">
+		    								<div class="imgbox__inner imgbox__inner--4-3">
+			    								<div class="image" style="background-image: url('CV/image//work/5 elements.png'); "></div>
+			    							</div>
+		    							</a>
+			    							
 		    						</div>
 		    					</div>
 		    					<div class="col-sm-6 col-sm-pull-6">
@@ -219,13 +223,16 @@
 		    					</div>
 		    				</div>
 		    			</div>
-		    			<div class="work-item">
+		    			<div class="work-item wow fadeInUp">
 		    				<div class="row">
 		    					<div class="col-sm-6 ">
 		    						<div class="imgbox">
-		    							<div class="imgbox__inner imgbox__inner--4-3">
-		    								<div class="image" style="background-image:url('CV/image/work/uprise.jpg'); "></div>
-		    							</div>
+		    							<a href="CV/image/work/uprise.jpg" data-fancybox="group">
+		    								<div class="imgbox__inner imgbox__inner--4-3">
+			    								<div class="image" style="background-image:url('CV/image/work/uprise.jpg'); "></div>
+			    							</div>
+		    							</a>
+			    							
 		    						</div>
 		    					</div>
 		    					<div class="col-sm-6 ">
@@ -237,13 +244,16 @@
 		    					</div>
 		    				</div>
 		    			</div>
-		    			<div class="work-item">
+		    			<div class="work-item wow fadeInUp">
 		    				<div class="row">
 		    					<div class="col-sm-6 col-sm-push-6">
 		    						<div class="imgbox">
-		    							<div class="imgbox__inner imgbox__inner--4-3">
-		    								<div class="image" style="background-image:url('CV/image/work/The Leisure.jpg'); "></div>
-		    							</div>
+		    							<a href="CV/image/work/The Leisure.jpg" data-fancybox="group">
+		    								<div class="imgbox__inner imgbox__inner--4-3">
+			    								<div class="image" style="background-image:url('CV/image/work/The Leisure.jpg'); "></div>
+			    							</div>
+		    							</a>
+			    							
 		    						</div>
 		    					</div>
 		    					<div class="col-sm-6 col-sm-pull-6">
@@ -255,13 +265,16 @@
 		    					</div>
 		    				</div>
 		    			</div>
-		    			<div class="work-item">
+		    			<div class="work-item wow fadeInUp">
 		    				<div class="row">
 		    					<div class="col-sm-6 ">
 		    						<div class="imgbox">
-		    							<div class="imgbox__inner imgbox__inner--4-3">
-		    								<div class="image" style="background-image:url('CV/image/work/Upgear.jpg'); "></div>
-		    							</div>
+		    							<a href="CV/image/work/Upgear.jpg" data-fancybox="group">
+		    								<div class="imgbox__inner imgbox__inner--4-3">
+			    								<div class="image" style="background-image:url('CV/image/work/Upgear.jpg'); "></div>
+			    							</div>
+		    							</a>
+			    							
 		    						</div>
 		    					</div>
 		    					<div class="col-sm-6 ">
@@ -282,18 +295,18 @@
 		    <!-- Start contact -->
 		    <div class="contact">
 		    	<div class="container">
-		    		<h2 class="subtitle u-text-center color-white">CONTACT ME</h2>
+		    		<h2 class="subtitle u-text-center color-white wow bounceInUp">CONTACT ME</h2>
 		    		<div class="info">
-		    			<div class="info__email">
+		    			<div class="info__email wow fadeInUp">
 		    				<a href="mailTo:jasonyang21656@gmail.com">jasonyang21656@gmail.com</a>
 		    			</div>
-		    			<div class="info__phone">
+		    			<div class="info__phone wow fadeInUp">
 		    				<a href="tel:+61 422923663">+61 422923663</a>
 		    			</div>
-		    			<div class="info__phone">
+		    			<div class="info__phone wow fadeInUp">
 		    				<a href="tel:+886 972342223">+886 972342223</a>
 		    			</div>
-		    			<div class="social-bar info__social-bar">
+		    			<div class="social-bar info__social-bar wow fadeInUp" data-wow-delay="0.3s">
 		    				<a href="https://www.linkedin.com/in/jasonyang21656/" class="icon-btn">
 								<i class="icon icon-linkedin-squared"></i>
 						    </a>
@@ -324,6 +337,7 @@
 	<!-- JS -->
 	<script src="CV/js/jquery-2.0.2.min.js"></script>
 	<script src="CV/js/wow.min.js"></script>
+	<script src="CV/js/jquery.fancybox.min.js"></script>
 	<script src="CV/js/custom.js"></script>
 
 </body>
